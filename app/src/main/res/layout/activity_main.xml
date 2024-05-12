@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="userViewModel"
+            type="com.novatech.contactsmanager.viewmodel.UserViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -26,6 +32,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="131dp"
                 android:layout_marginBottom="12dp"
+                android:text="@={userViewModel.inputName}"
                 android:hint="enter your name"
                 app:layout_constraintBottom_toTopOf="@+id/emailET"
                 app:layout_constraintEnd_toStartOf="@+id/btn1"
@@ -40,6 +47,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="131dp"
                 android:layout_marginBottom="16dp"
+                android:text="@={userViewModel.inputEmail}"
                 android:hint="enter your email"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/nameET"
