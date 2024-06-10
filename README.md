@@ -1,4 +1,4 @@
-# Buddy Bank App 
+# Buddy Bank
 
 Welcome to the Buddy Bank app, where managing your contacts is as smooth as a well-tailored suit. This Kotlin Android application combines the elegance of MVVM architecture with the power of Room, Data Binding, LiveData, and View Models to create a seamless user experience. 💫✨
 
